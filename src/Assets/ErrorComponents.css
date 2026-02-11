@@ -1,0 +1,54 @@
+/* Error Components Styles */
+
+/* 404 Page animations */
+.bi-exclamation-triangle {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+details {
+  cursor: pointer;
+  user-select: none;
+}
+
+details summary {
+  outline: none;
+}
+
+details summary:hover {
+  text-decoration: underline;
+}
+
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+/* Error boundary styles */
+.alert details pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Card hover effect */
+.card.shadow:hover {
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2) !important;
+  transition: box-shadow 0.3s ease-in-out;
+}
